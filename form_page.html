@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Web Forma</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top">
+        <div class="menu-container">
+          <div class="menu">
+            <div class="title">Web forma</div>
+            <div class="section-1" href="#">Početak</div>
+            <div class="section-2" href="#">Općeniti upit</div>
+            <div class="section-3" href="#">Narudžba</div>
+            <div class="section-4" href="#">Prikaz podataka</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id=section-2>
+      <h1>Općeniti upit</h1>
+      <form class="speaker-form" action="input_data_opceniti_upit.php" method="post">
+        <div class="form-row">
+          <label for="full-name">Ime i prezime</label>
+          <input id="full-name" name="full-name" type="text">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="joe@example.com">
+        </div>
+        <div class="form-row">
+          <label for="abstract">Upit</label>
+          <textarea id="abstract" name="abstract"></textarea>
+          <div class="instructions">Napišite upit u 500 slova ili manje.</div>
+        </div>
+        <div class="form-row">
+          <button>Pošalji</button>
+        </div>
+      </form>
+    </section>
+    <section id=section-3>
+      <h1>Narudžba</h1>
+      <form class="speaker-form" action="input_data_narudzba.php" method="post">
+        <div class="form-row">
+          <label for="full-name">Ime i prezime</label>
+          <input id="full-name" name="full-name" type="text">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="joe@example.com">
+        </div>
+        <div class="form-row">
+          <label for="address">Adresa</label>
+          <input id="address" name="address" type="text">
+        </div>
+        <div class="form-row">
+          <label for="oib">OIB</label>
+          <input id="oib" name="oib" type="text">
+        </div>
+        <div class="form-row">
+        <label for="package">Odabir paketa</label>
+        <select id="package" name="package">
+          <option value="Paket 1">Paket 1</option>
+          <option value="Paket 2">Paket 2</option>
+          <option value="Paket 3">Paket 3</option>
+        </select>
+      </div>
+        <div class="form-row">
+          <label for="abstract">Napomena</label>
+          <textarea id="abstract" name="abstract"></textarea>
+          <div class="instructions">Napišite napomenu u 500 slova ili manje.</div>
+        </div>
+        <div class="form-row">
+          <button>Pošalji</button>
+        </div>
+      </form>
+    </section>
+    <section id="section-4">
+      <h1>Prikaz podataka</h1>
+      <form class="speaker-form show" action="show_data_opceniti_upit.php" method="get">
+        <div class="form-row">
+          <p>Odaberite za prikaz podataka općenitog upita.</p>
+          <button>Prikaži</button>
+        </div>
+      </form>
+      <form class="speaker-form" action="show_data_narudzba.php" method="post">
+        <div class="form-row">
+          <p>Odaberite za prikaz podataka narudžbe.</p>
+          <button>Prikaži</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+          <div>
+            <a href="Mail To:mislav.mihic1997@gmail.com"><span class="fas fa-envelope-square"</span><i/>mislav.mihic1997@gmail.com</a>
+          </div>
+          <p id="currentTime"></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
