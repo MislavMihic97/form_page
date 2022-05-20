@@ -3,24 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
-  padding-bottom: 120px;
+  padding-bottom: 65px;
+  background-color: #eaedf0;
 }
 
-nav {
+.navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
 }
 
 .menu-container {
-  color: #fff;
-  background-color: #5995da;
+  color: black;
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  background-color: rgba(200,200,200,0.8);
 }
 
 .menu {
@@ -31,22 +32,46 @@ nav {
 
 .title {
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .section-1 {
   margin-left: auto;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .section-2 {
   margin-left: 20px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .section-3 {
   margin-left: 20px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-.section-4 {
-  margin-left: 20px;
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  background: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover:before {
+    width: 100%;
 }
 
 section {
@@ -144,36 +169,32 @@ h1 {
 
 footer {
   text-align: center;
+  background-color: #bebebe;
 }
 
-a:link {
+.mail:link {
     color: black;
-    font-size: 12px;
     text-align: center;
     background-color: transparent;
     text-decoration: none;
-    text-transform: lowercase;
 }
 
-a:visited {
+.mail:visited {
     color: pink;
     background-color: transparent;
     text-decoration: none;
-    text-transform: lowercase;
 }
 
-a:hover {
+.mail:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
-    text-transform: lowercase;
 }
 
-a:active {
+.mail:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
-    text-transform: lowercase;
 }
 
 span {
@@ -183,7 +204,7 @@ span {
     padding-left: 2rem;
     font-size: 11px;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 700px) {
