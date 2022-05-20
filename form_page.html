@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Web Forma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -12,24 +14,29 @@
         <div class="menu-container">
           <div class="menu">
             <div class="title">Web forma</div>
-            <div class="section-1" href="#">Početak</div>
-            <div class="section-2" href="#">Općeniti upit</div>
-            <div class="section-3" href="#">Narudžba</div>
-            <div class="section-4" href="#">Prikaz podataka</div>
+            <div class="section-1">
+              <a class="nav-link" href="#section-1">Općeniti upit</a>
+            </div>
+            <div class="section-2">
+              <a class="nav-link" href="#section-2">Narudžba</a>
+            </div>
+            <div class="section-3">
+              <a class="nav-link" href="#section-3">Prikaz podataka</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <section id=section-2>
-      <h1>Općeniti upit</h1>
+    <section>
+      <h1 id="section-1">Općeniti upit</h1>
       <form class="speaker-form" action="input_data_opceniti_upit.php" method="post">
         <div class="form-row">
           <label for="full-name">Ime i prezime</label>
-          <input id="full-name" name="full-name" type="text">
+          <input id="full-name" name="full-name" type="text" required>
         </div>
         <div class="form-row">
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="joe@example.com">
+          <input id="email" name="email" type="email" placeholder="joe@example.com" required>
         </div>
         <div class="form-row">
           <label for="abstract">Upit</label>
@@ -41,24 +48,24 @@
         </div>
       </form>
     </section>
-    <section id=section-3>
-      <h1>Narudžba</h1>
+    <section>
+      <h1 id="section-2">Narudžba</h1>
       <form class="speaker-form" action="input_data_narudzba.php" method="post">
         <div class="form-row">
           <label for="full-name">Ime i prezime</label>
-          <input id="full-name" name="full-name" type="text">
+          <input id="full-name" name="full-name" type="text" required>
         </div>
         <div class="form-row">
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="joe@example.com">
+          <input id="email" name="email" type="email" placeholder="joe@example.com" required>
         </div>
         <div class="form-row">
           <label for="address">Adresa</label>
-          <input id="address" name="address" type="text">
+          <input id="address" name="address" type="text" required>
         </div>
         <div class="form-row">
           <label for="oib">OIB</label>
-          <input id="oib" name="oib" type="text">
+          <input id="oib" name="oib" type="text" required>
         </div>
         <div class="form-row">
         <label for="package">Odabir paketa</label>
@@ -67,7 +74,7 @@
           <option value="Paket 2">Paket 2</option>
           <option value="Paket 3">Paket 3</option>
         </select>
-      </div>
+        </div>
         <div class="form-row">
           <label for="abstract">Napomena</label>
           <textarea id="abstract" name="abstract"></textarea>
@@ -78,28 +85,28 @@
         </div>
       </form>
     </section>
-    <section id="section-4">
-      <h1>Prikaz podataka</h1>
-      <form class="speaker-form show" action="show_data_opceniti_upit.php" method="get">
+    <section>
+      <h1 id="section-3">Prikaz podataka</h1>
+      <form class="speaker-form" action="show_data_opceniti_upit.php" method="get">
         <div class="form-row">
           <p>Odaberite za prikaz podataka općenitog upita.</p>
           <button>Prikaži</button>
         </div>
       </form>
-      <form class="speaker-form" action="show_data_narudzba.php" method="post">
+      <form class="speaker-form" action="show_data_narudzba.php" method="get">
         <div class="form-row">
           <p>Odaberite za prikaz podataka narudžbe.</p>
           <button>Prikaži</button>
         </div>
       </form>
     </section>
-
     <footer>
           <div>
-            <a href="Mail To:mislav.mihic1997@gmail.com"><span class="fas fa-envelope-square"</span><i/>mislav.mihic1997@gmail.com</a>
+            <a class="mail" href="MailTo:mislav.mihic1997@gmail.com"><span class="fa fa-envelope"></span>mislav.mihic1997@gmail.com</a>
           </div>
-          <p id="currentTime"></p>
+          <span class="fa fa-clock-o" id="currentTime"></span>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
