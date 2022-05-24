@@ -74,6 +74,26 @@ header {
     width: 100%;
 }
 
+.step-container {
+  color: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #eaedf0;
+}
+
+.step-1 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step-2, .step-3 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 section {
   color: #5d6063;
   background-color: #eaedf0;
@@ -168,6 +188,8 @@ h1 {
 }
 
 footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: #bebebe;
 }
@@ -186,7 +208,7 @@ footer {
 }
 
 .mail:hover {
-    color: red;
+    color: blue;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -238,3 +260,4 @@ span {
     margin-left: 120px;
   }
 }
+
