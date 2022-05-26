@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="hr">
     <head>
         <meta charset="UTF-8">
         <title>Unos podataka u opceniti upit</title>
