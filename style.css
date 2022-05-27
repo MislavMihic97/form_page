@@ -252,6 +252,34 @@ span {
     text-transform: capitalize;
 }
 
+.fa-clock-o {
+  padding-right: 2rem;
+}
+
+.link-top {
+  position: relative;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: blue;
+  font-size: 14px;
+}
+
+.link-top:before {
+  content: "";
+  position: absolute;
+  background: blue;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.link-top:hover:before {
+    width: 100%;
+}
+
+
 @media only screen and (min-width: 700px) {
   .speaker-form-header, .speaker-form {
     width: 600px;
