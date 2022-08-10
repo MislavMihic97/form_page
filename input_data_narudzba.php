@@ -2,7 +2,7 @@
 <html lang="hr">
     <head>
         <meta charset="UTF-8">
-        <title>Unos podataka u narudžbu</title>
+        <title>Unos podatak u narudžbu</title>
     </head>
     <body>
         <?php
