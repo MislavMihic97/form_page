@@ -5,6 +5,7 @@
         <title>Prikaz podataka narudzba</title>
     </head>
     <body>
+        
         <div style="text-align: center;">
             <h1>Narudžba</h1>
             <table border="1" cellpadding="2" cellspacing="2" style="width:60%; margin-left: auto; margin-right: auto;">
