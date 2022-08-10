@@ -41,5 +41,4 @@
         $baza->close();
     ?>
     </body>
-    
 </html>
